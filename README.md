@@ -23,7 +23,7 @@ SwaggerDeck is a lightweight web application that allows you to easily manage, v
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/swagger-deck.git
+git clone https://github.com/AliHz1337/swagger-deck.git
 git clone https://github.com/swagger-api/swagger-ui.git swagger-deck/swagger-ui
 ```
 
