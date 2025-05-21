@@ -1,0 +1,3 @@
+# This file exists to keep the json_files directory in Git
+# The directory is kept to ensure proper application functionality from initial clone
+# Uploaded Swagger JSON files will be stored in this directory

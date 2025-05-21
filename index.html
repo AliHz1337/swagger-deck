@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swagger Documentation Management</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Container for the whole page content -->
+    <div class="container">
+        <!-- Header section -->
+        <div class="header">
+            <h1><i class="fas fa-book-open"></i> Swagger Documentation Management</h1>
+        </div>
+
+        <!-- Statistics bar -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value" id="total-files">0</div>
+                <div class="stat-label">Files</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="total-size">0</div>
+                <div class="stat-label">Total Size</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="last-upload">-</div>
+                <div class="stat-label">Last Update</div>
+            </div>
+        </div>
+
+        <!-- Upload area -->
+        <div class="upload-area" id="upload-area">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <h3>Upload JSON File</h3>
+            <p>Drag and drop your file here or click</p>
+            <div class="file-input">
+                <button class="btn btn-primary mt-2" id="upload-button">Choose File</button>
+                <input type="file" id="file-input" accept=".json" />
+            </div>
+        </div>
+
+        <!-- Files container -->
+        <div id="files-container">
+            <table class="files-table">
+                <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>Size</th>
+                        <th>Update Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="file-list">
+                    <!-- Files will be listed here -->
+                </tbody>
+            </table>
+
+            <!-- Empty state message -->
+            <div class="empty-state" id="empty-state" style="display: none;">
+                <i class="fas fa-file-alt"></i>
+                <h3>No Files Found</h3>
+                <p>Upload your JSON files to see them here.</p>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <div class="footer">
+            <p>© 2025 - Swagger Documentation Management</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

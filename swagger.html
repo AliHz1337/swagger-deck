@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Swagger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="swagger-ui/dist/swagger-ui.css" />
+    <link rel="stylesheet" href="swagger.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-title">
+            <i class="fas fa-book"></i>
+            <span id="file-name">Show Swagger</span>
+        </div>
+        <div class="top-bar-actions">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-right"></i>
+                Return to home page
+            </a>
+            <a href="#" id="download-link" target="_blank">
+                <i class="fas fa-download"></i>
+                Download File
+            </a>
+        </div>
+    </div>
+
+    <!-- Loading Container -->
+    <div id="loading-container" class="loading-container">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Error Container -->
+    <div id="error-container" class="error-container" style="display: none;">
+        <i class="fas fa-exclamation-triangle"></i>
+        <h2>Error loading file</h2>
+        <p id="error-message">The specified file was not found or is not valid.</p>
+        <a href="index.html" class="btn btn-primary mt-3">
+            <i class="fas fa-arrow-right ml-2"></i>
+            Return to home page
+        </a>
+    </div>
+
+    <!-- Swagger UI Container -->
+    <div id="swagger-ui" style="display: none;"></div>
+
+    <script src="swagger-ui/dist/swagger-ui-bundle.js"></script>
+    <script src="swagger-ui/dist/swagger-ui-standalone-preset.js"></script>
+    <script src="swagger.js"></script>
+</body>
+
+</html>

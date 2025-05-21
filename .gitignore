@@ -1,0 +1,19 @@
+# SwaggerDeck .gitignore file
+
+# Ignore all files in json_files directory except .gitkeep
+/json_files/*
+!/json_files/.gitkeep
+
+# Ignore swagger-ui directory (should be cloned separately)
+/swagger-ui/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
